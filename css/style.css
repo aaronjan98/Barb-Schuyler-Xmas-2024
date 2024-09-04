@@ -6,6 +6,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #239ac2;
+  overflow: hidden;
 }
 
 .birthdayCard {
@@ -14,8 +15,8 @@ body {
   height: 350px;
   cursor: pointer;
   transform-style: preserve-3d;
-  transform: perspective(2500px);
-  transition: 1s;
+  transform: perspective(2500px) scale(1);
+  transition: 0.5s;
 }
 
 .birthdayCard:hover {
@@ -178,4 +179,15 @@ p.signed {
   margin: 30px 30px 10px 30px;
   outline-color: #333;
   outline-style: dotted;
+}
+
+/* Media Query to Scale the Card on Larger Screens */
+@media (min-width: 768px) {
+  .birthdayCard {
+    transform: scale(2);
+  }
+
+  .birthdayCard:hover {
+    transform: perspective(2500px) rotate(5deg) scale(2) translateX(50%);
+  }
 }
