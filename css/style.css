@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nobile:400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 body {
   display: flex;
   align-items: center;
@@ -138,26 +140,42 @@ body {
   left: 0;
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Nobile";
+  color: #331717;
+  font-style: italic;
 }
 
-p {
-  font-family: "Brush Script MT", cursive;
-  margin: 40px;
-  color: #333;
+.cardInside .date {
+  display: flex;
+  justify-content: flex-end;
+}
+.cardInside .date p {
+  font-size: smaller;
 }
 
-.name {
-  position: absolute;
-  left: 150px;
-  top: 200px;
-  color: #333;
+.date,
+.card-contents {
+  padding: 0 10px;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p.signed {
+  margin-top: 0;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 1.5em;
 }
 
 .back {
   font-family: Tahoma, sans-serif;
   color: #333;
   text-align: center;
-  margin: 30px;
+  margin: 30px 30px 10px 30px;
   outline-color: #333;
   outline-style: dotted;
 }
