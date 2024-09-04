@@ -1,6 +1,8 @@
 # README
 
-This is a birthday card for my old man. May repurpose for other cards in the future though.
+This is a birthday card for my old man. Can be found [here](https://pops-bday-card-2024.netlify.app/)
+
+May repurpose for other cards in the future though.
 
 The animation to open and close is done with CSS so you can simply open the index.html in the browser to view it
 
